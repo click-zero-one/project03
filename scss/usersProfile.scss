@@ -1,0 +1,125 @@
+$firstColor : black;    /* you can put every color you want ( for background )*/
+$primaryColor : whitesmoke;   /* you can put every color you want ( for color)*/
+
+* { 
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    transition:all .5s;}
+
+@mixin flexState($display , $justifyContent) {
+    display: $display;
+    justify-content: $justifyContent}
+
+.flexState {
+    display:flex;
+    flex-direction:column;}
+
+.backgroundState {
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;}
+
+.container {
+    width:60%;
+    height:500px;
+    margin:3rem auto;
+    display:flex;}
+
+.user {
+    background-color:$firstColor;
+    height:100%;
+    width:80px;
+    margin-right:1%;
+    cursor:pointer;
+    @include flexState( flex , space-between );}
+
+.firstItemUser {
+    width:100%;
+    height:100%;
+    @extend .flexState;}
+
+.imgUser {
+    @extend .backgroundState;
+    height:60%;}
+
+.detailUser {
+    height:40%;
+    @extend .flexState;}
+
+.name {
+    width:170px;
+    color:$primaryColor;
+    transform:rotate(-90deg);
+    font-size:1.8rem;
+    font-weight:500;
+    position:relative;
+    top:41%;
+    right:59%;
+    text-align:center;}
+
+.followBtn {
+    display:none;
+    width:40%;
+    height:45px;
+    position:relative;
+    top:25%;
+    font-size:1.3rem;
+    color:$primaryColor;
+    border-radius:30px;
+    border:2px solid $primaryColor;
+    background-color:rgba(255, 255, 255, 0);
+    cursor:pointer;}
+
+.secondItemUser {
+    opacity:0%;
+    display:none;
+    flex-direction:column;}
+
+.containerDetailProfile {
+    width:80%;
+    height:35%;}
+
+.detailProfile {
+    height:65px;
+    position:relative;
+    top:32%;
+    left:14%;
+    @include flexState( flex , space-around );}
+
+.profItem {
+    width:95px;
+    @extend .flexState;}
+
+.number {
+    height:60%;
+    color:$primaryColor;
+    text-align:center;
+    font-size:1.9rem;
+    font-weight:bold;}
+
+.title {
+    height:40%;
+    color:$primaryColor;
+    text-align:center;}
+
+.posts {
+    @extend .backgroundState;
+    height:65%;
+    border-top-left-radius:50%;
+    @include flexState( flex , center );}
+
+.goToPageBtn {
+    width:43%;
+    height:46px;
+    position:relative;
+    top:76%;
+    font-size:1.2rem;
+    color:rgb(255, 255, 255);
+    border-radius:30px;
+    border:2px solid $firstColor;
+    background-color:$firstColor;
+    cursor:pointer;
+    line-height:100%;}

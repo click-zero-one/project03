@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+  transition: all .5s; }
+
+.flexState, .firstItemUser, .detailUser, .profItem {
+  display: flex;
+  flex-direction: column; }
+
+.backgroundState, .imgUser, .posts {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.container {
+  width: 60%;
+  height: 500px;
+  margin: 3rem auto;
+  display: flex; }
+
+.user {
+  background-color: black;
+  height: 100%;
+  width: 80px;
+  margin-right: 1%;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between; }
+
+.firstItemUser {
+  width: 100%;
+  height: 100%; }
+
+.imgUser {
+  height: 60%; }
+
+.detailUser {
+  height: 40%; }
+
+.name {
+  width: 170px;
+  color: whitesmoke;
+  transform: rotate(-90deg);
+  font-size: 1.8rem;
+  font-weight: 500;
+  position: relative;
+  top: 41%;
+  right: 59%;
+  text-align: center; }
+
+.followBtn {
+  display: none;
+  width: 40%;
+  height: 45px;
+  position: relative;
+  top: 25%;
+  font-size: 1.3rem;
+  color: whitesmoke;
+  border-radius: 30px;
+  border: 2px solid whitesmoke;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer; }
+
+.secondItemUser {
+  opacity: 0%;
+  display: none;
+  flex-direction: column; }
+
+.containerDetailProfile {
+  width: 80%;
+  height: 35%; }
+
+.detailProfile {
+  height: 65px;
+  position: relative;
+  top: 32%;
+  left: 14%;
+  display: flex;
+  justify-content: space-around; }
+
+.profItem {
+  width: 95px; }
+
+.number {
+  height: 60%;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: bold; }
+
+.title {
+  height: 40%;
+  color: whitesmoke;
+  text-align: center; }
+
+.posts {
+  height: 65%;
+  border-top-left-radius: 50%;
+  display: flex;
+  justify-content: center; }
+
+.goToPageBtn {
+  width: 43%;
+  height: 46px;
+  position: relative;
+  top: 76%;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 30px;
+  border: 2px solid black;
+  background-color: black;
+  cursor: pointer;
+  line-height: 100%; }
